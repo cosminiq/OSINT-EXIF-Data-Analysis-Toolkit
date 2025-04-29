@@ -1,0 +1,3448 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7641e8144073ce43f3cb1eefdc9401f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7641e8144073ce43f3cb1eefdc9401f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7641e8144073ce43f3cb1eefdc9401f7 = L.map(
+                "map_7641e8144073ce43f3cb1eefdc9401f7",
+                {
+                    center: [44.4234, 26.1687],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d63d52150542c48f9e701bf21afc29e4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d63d52150542c48f9e701bf21afc29e4.addTo(map_7641e8144073ce43f3cb1eefdc9401f7);
+        
+    
+            var marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_2be1afe37952f7bb2059a5b731ab6cfa = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_b455c148cbbf045841f02e1302c36a18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d58c5f1fe37569825c1ec37595aac018 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76640a0016891fbcffd50e21c11f8e1e = $(`<div id="html_76640a0016891fbcffd50e21c11f8e1e" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20201114_162801.jpg<br>         <b>MD5:</b> dc6aaf0e277f6b94541ed4286a3cd8ae<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20201114_162801.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d58c5f1fe37569825c1ec37595aac018.setContent(html_76640a0016891fbcffd50e21c11f8e1e);
+            
+        
+
+        marker_2be1afe37952f7bb2059a5b731ab6cfa.bindPopup(popup_d58c5f1fe37569825c1ec37595aac018)
+        ;
+
+        
+    
+    
+                marker_2be1afe37952f7bb2059a5b731ab6cfa.setIcon(icon_b455c148cbbf045841f02e1302c36a18);
+            
+    
+            var marker_8487f45814f4dc637ecd9a25dfe40bf3 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_d6a4716a046be290cb923ec45c06d68a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45730596729580adb8cb59608edc216e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71eeee3b50ffc800c6d6d277598e3dd2 = $(`<div id="html_71eeee3b50ffc800c6d6d277598e3dd2" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240424_202438.jpg<br>         <b>MD5:</b> a952f6e873f44e1f18f271ee2596b500<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240424_202438.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_45730596729580adb8cb59608edc216e.setContent(html_71eeee3b50ffc800c6d6d277598e3dd2);
+            
+        
+
+        marker_8487f45814f4dc637ecd9a25dfe40bf3.bindPopup(popup_45730596729580adb8cb59608edc216e)
+        ;
+
+        
+    
+    
+                marker_8487f45814f4dc637ecd9a25dfe40bf3.setIcon(icon_d6a4716a046be290cb923ec45c06d68a);
+            
+    
+            var marker_71cd6d29440def0618f06a9390adb479 = L.marker(
+                [44.6167, 26.1166],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c977313c74c834d07ff4132612c79ad5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1ee8a05a80909807702c1d18217707f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7458140183578ed05eeedd47bcb0162 = $(`<div id="html_a7458140183578ed05eeedd47bcb0162" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240425_202943.jpg<br>         <b>MD5:</b> e0cb47b54881d95aa1f09526bbbc27b8<br>         <b>Location:</b> BaloteÅŸti, Romania<br>     <img src="static/thumb_20240425_202943.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d1ee8a05a80909807702c1d18217707f.setContent(html_a7458140183578ed05eeedd47bcb0162);
+            
+        
+
+        marker_71cd6d29440def0618f06a9390adb479.bindPopup(popup_d1ee8a05a80909807702c1d18217707f)
+        ;
+
+        
+    
+    
+                marker_71cd6d29440def0618f06a9390adb479.setIcon(icon_c977313c74c834d07ff4132612c79ad5);
+            
+    
+            var marker_50902990622781d35d833e2bed05e419 = L.marker(
+                [45.9, 27.0834],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1470e3ca5ef98624a11eb96beb284e79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd049cdfb99c6299d619b50da8df7741 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48b8f04cb92abcee3bd47532b3b9b835 = $(`<div id="html_48b8f04cb92abcee3bd47532b3b9b835" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240505_151315.jpg<br>         <b>MD5:</b> fc9a4d3be4c23a43748ae75458b3a17e<br>         <b>Location:</b> Panciu, Romania<br>     <img src="static/thumb_20240505_151315.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_fd049cdfb99c6299d619b50da8df7741.setContent(html_48b8f04cb92abcee3bd47532b3b9b835);
+            
+        
+
+        marker_50902990622781d35d833e2bed05e419.bindPopup(popup_fd049cdfb99c6299d619b50da8df7741)
+        ;
+
+        
+    
+    
+                marker_50902990622781d35d833e2bed05e419.setIcon(icon_1470e3ca5ef98624a11eb96beb284e79);
+            
+    
+            var marker_10f84b950d06e6df1cd92dd5eab96fcc = L.marker(
+                [45.9999, 26.8832],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_890596a02627eba98ec35c9045dc1d3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ba4ed012108709db0ec8f1d4f92b5de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_082ca28ec28341c32b3bdbfacd30c1e3 = $(`<div id="html_082ca28ec28341c32b3bdbfacd30c1e3" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240505_175200.jpg<br>         <b>MD5:</b> c0798cfcbcf0b9cc2b1c490db4bbb04f<br>         <b>Location:</b> RÄƒcoasa, Romania<br>     <img src="static/thumb_20240505_175200.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_1ba4ed012108709db0ec8f1d4f92b5de.setContent(html_082ca28ec28341c32b3bdbfacd30c1e3);
+            
+        
+
+        marker_10f84b950d06e6df1cd92dd5eab96fcc.bindPopup(popup_1ba4ed012108709db0ec8f1d4f92b5de)
+        ;
+
+        
+    
+    
+                marker_10f84b950d06e6df1cd92dd5eab96fcc.setIcon(icon_890596a02627eba98ec35c9045dc1d3a);
+            
+    
+            var marker_7af22b22be44665945b7abb9787c18d0 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_654492cd3db0286b72bf746c0968ebb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d430c435e3b88b393ae6c970061d25d7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc088c0cd3f0fa29d14208a1f19ff67e = $(`<div id="html_cc088c0cd3f0fa29d14208a1f19ff67e" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240508_145205.jpg<br>         <b>MD5:</b> 578a3d81d42db768ca0d8745bf1f5a34<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240508_145205.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d430c435e3b88b393ae6c970061d25d7.setContent(html_cc088c0cd3f0fa29d14208a1f19ff67e);
+            
+        
+
+        marker_7af22b22be44665945b7abb9787c18d0.bindPopup(popup_d430c435e3b88b393ae6c970061d25d7)
+        ;
+
+        
+    
+    
+                marker_7af22b22be44665945b7abb9787c18d0.setIcon(icon_654492cd3db0286b72bf746c0968ebb7);
+            
+    
+            var marker_6adaa00ad946f952e06a46a7581417fd = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_0705f4e8f8be9a46abb4741425e2c079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a04a88791739f94b2314972de08c41f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d6419ecec7d0362e414b05bf39d1db26 = $(`<div id="html_d6419ecec7d0362e414b05bf39d1db26" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240511_060443.jpg<br>         <b>MD5:</b> 674fcc2a383e5446beab1c0ffc655cf6<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240511_060443.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_6a04a88791739f94b2314972de08c41f.setContent(html_d6419ecec7d0362e414b05bf39d1db26);
+            
+        
+
+        marker_6adaa00ad946f952e06a46a7581417fd.bindPopup(popup_6a04a88791739f94b2314972de08c41f)
+        ;
+
+        
+    
+    
+                marker_6adaa00ad946f952e06a46a7581417fd.setIcon(icon_0705f4e8f8be9a46abb4741425e2c079);
+            
+    
+            var marker_06f34fc648317bb113967ad2b770158c = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_61a7697de5fd01cb9cd844de3dd615a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca1a9a4c1bd55322d662d4b32c4b97c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03635f827b0272b8ac82cc68e978e77d = $(`<div id="html_03635f827b0272b8ac82cc68e978e77d" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240511_060450.jpg<br>         <b>MD5:</b> edd80f5311eeb44676d60911e787c7c6<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240511_060450.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_ca1a9a4c1bd55322d662d4b32c4b97c6.setContent(html_03635f827b0272b8ac82cc68e978e77d);
+            
+        
+
+        marker_06f34fc648317bb113967ad2b770158c.bindPopup(popup_ca1a9a4c1bd55322d662d4b32c4b97c6)
+        ;
+
+        
+    
+    
+                marker_06f34fc648317bb113967ad2b770158c.setIcon(icon_61a7697de5fd01cb9cd844de3dd615a8);
+            
+    
+            var marker_2a6802b9e4138624e24acd494dd28cfc = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_072b8691a65b91d55b2048b196e8f83c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20e699e4a7483655f612c58aba75e6f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12480ece0315282dbd28df9aace86a67 = $(`<div id="html_12480ece0315282dbd28df9aace86a67" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240513_090250.jpg<br>         <b>MD5:</b> df8b36061666335b4e8206a34129ebd8<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240513_090250.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_20e699e4a7483655f612c58aba75e6f7.setContent(html_12480ece0315282dbd28df9aace86a67);
+            
+        
+
+        marker_2a6802b9e4138624e24acd494dd28cfc.bindPopup(popup_20e699e4a7483655f612c58aba75e6f7)
+        ;
+
+        
+    
+    
+                marker_2a6802b9e4138624e24acd494dd28cfc.setIcon(icon_072b8691a65b91d55b2048b196e8f83c);
+            
+    
+            var marker_d61166677bacd13fa7f31aefd7191358 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c5de4dda3996ca2a5d3cc3fcc1301850 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12f12f529ddaf68aa2fd3214b6cfaffe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8a317b3d0fe209976743ead8926a242 = $(`<div id="html_f8a317b3d0fe209976743ead8926a242" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240514_072824.jpg<br>         <b>MD5:</b> 1e79021293aced2a569ad1e9898d66fc<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240514_072824.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_12f12f529ddaf68aa2fd3214b6cfaffe.setContent(html_f8a317b3d0fe209976743ead8926a242);
+            
+        
+
+        marker_d61166677bacd13fa7f31aefd7191358.bindPopup(popup_12f12f529ddaf68aa2fd3214b6cfaffe)
+        ;
+
+        
+    
+    
+                marker_d61166677bacd13fa7f31aefd7191358.setIcon(icon_c5de4dda3996ca2a5d3cc3fcc1301850);
+            
+    
+            var marker_45d4008b30e640acd4b0c95fb8342f3c = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9553a666b04d05e54ff1d955dec0d040 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdefae5103764d3f6197c8d04bf2c5a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8158606e5ab6293094c96bd0a1d2b9b4 = $(`<div id="html_8158606e5ab6293094c96bd0a1d2b9b4" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240514_120447.jpg<br>         <b>MD5:</b> 57b70bbcb3064ec1a21c914a18b1d916<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240514_120447.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_bdefae5103764d3f6197c8d04bf2c5a2.setContent(html_8158606e5ab6293094c96bd0a1d2b9b4);
+            
+        
+
+        marker_45d4008b30e640acd4b0c95fb8342f3c.bindPopup(popup_bdefae5103764d3f6197c8d04bf2c5a2)
+        ;
+
+        
+    
+    
+                marker_45d4008b30e640acd4b0c95fb8342f3c.setIcon(icon_9553a666b04d05e54ff1d955dec0d040);
+            
+    
+            var marker_1dc4f81272222d876d16a1231cb9c1a7 = L.marker(
+                [44.403, 26.2199],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2f59a8f1f9c5e1db616fc359c64074c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75652e6cdc298cd9bec1b497573cd6b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c8900f23396d5e07972524e0cb9bb40 = $(`<div id="html_0c8900f23396d5e07972524e0cb9bb40" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240516_105545.jpg<br>         <b>MD5:</b> 65a0f9d12cf69c6dd5eeb590f1754add<br>         <b>Location:</b> CÄƒÈ›elu, Romania<br>     <img src="static/thumb_20240516_105545.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_75652e6cdc298cd9bec1b497573cd6b1.setContent(html_0c8900f23396d5e07972524e0cb9bb40);
+            
+        
+
+        marker_1dc4f81272222d876d16a1231cb9c1a7.bindPopup(popup_75652e6cdc298cd9bec1b497573cd6b1)
+        ;
+
+        
+    
+    
+                marker_1dc4f81272222d876d16a1231cb9c1a7.setIcon(icon_2f59a8f1f9c5e1db616fc359c64074c3);
+            
+    
+            var marker_94a63b3984f2fd7033cba784f87798c5 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_4110eaa241a4a004643a6e60d3c6dfe2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2a309266aa7ac256053d2c83cd420b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4873d8a9efa4080e0b77a8795b12858b = $(`<div id="html_4873d8a9efa4080e0b77a8795b12858b" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240518_203534.jpg<br>         <b>MD5:</b> c9f294ce0eedd4d14a8867ec666bbe15<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240518_203534.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d2a309266aa7ac256053d2c83cd420b6.setContent(html_4873d8a9efa4080e0b77a8795b12858b);
+            
+        
+
+        marker_94a63b3984f2fd7033cba784f87798c5.bindPopup(popup_d2a309266aa7ac256053d2c83cd420b6)
+        ;
+
+        
+    
+    
+                marker_94a63b3984f2fd7033cba784f87798c5.setIcon(icon_4110eaa241a4a004643a6e60d3c6dfe2);
+            
+    
+            var marker_faa308d5b7b2f94adf8a88d2199c388d = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_92d6a870433c0185b891961266a00a9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d1309d2de7f9e98b3663f78a96fba48 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_35f9c71d9120e153ae66b2482fcf5f1d = $(`<div id="html_35f9c71d9120e153ae66b2482fcf5f1d" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240519_161258.jpg<br>         <b>MD5:</b> f5a71d4afd93e9c7cb8184b647a08494<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240519_161258.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_1d1309d2de7f9e98b3663f78a96fba48.setContent(html_35f9c71d9120e153ae66b2482fcf5f1d);
+            
+        
+
+        marker_faa308d5b7b2f94adf8a88d2199c388d.bindPopup(popup_1d1309d2de7f9e98b3663f78a96fba48)
+        ;
+
+        
+    
+    
+                marker_faa308d5b7b2f94adf8a88d2199c388d.setIcon(icon_92d6a870433c0185b891961266a00a9f);
+            
+    
+            var marker_f02e42c16d9da6567a11b5a1487b807b = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_926cd0bc8b8699e67bd15c2333b7cc64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e58e64f92aa43d814ad07ac7581d3c82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_320283ea248691da657223cce16d9254 = $(`<div id="html_320283ea248691da657223cce16d9254" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240519_211442.jpg<br>         <b>MD5:</b> f230eff2d795200fe65f3e29b26561f8<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240519_211442.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_e58e64f92aa43d814ad07ac7581d3c82.setContent(html_320283ea248691da657223cce16d9254);
+            
+        
+
+        marker_f02e42c16d9da6567a11b5a1487b807b.bindPopup(popup_e58e64f92aa43d814ad07ac7581d3c82)
+        ;
+
+        
+    
+    
+                marker_f02e42c16d9da6567a11b5a1487b807b.setIcon(icon_926cd0bc8b8699e67bd15c2333b7cc64);
+            
+    
+            var marker_c89bf80b6b3104254eb212f5e036a0f9 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1377d282a69b5865ad4d86ea9a02b082 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c0a819d54a6cf30385e7241d4378cb1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc1a40d8cce596b5ad3c9ccf048dbfe2 = $(`<div id="html_dc1a40d8cce596b5ad3c9ccf048dbfe2" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240525_131512.jpg<br>         <b>MD5:</b> 4154738c0b60936bf4991c5bdc0cc244<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240525_131512.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_0c0a819d54a6cf30385e7241d4378cb1.setContent(html_dc1a40d8cce596b5ad3c9ccf048dbfe2);
+            
+        
+
+        marker_c89bf80b6b3104254eb212f5e036a0f9.bindPopup(popup_0c0a819d54a6cf30385e7241d4378cb1)
+        ;
+
+        
+    
+    
+                marker_c89bf80b6b3104254eb212f5e036a0f9.setIcon(icon_1377d282a69b5865ad4d86ea9a02b082);
+            
+    
+            var marker_305fe79f8a5b3c58d6d76bac4b78f6c8 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1b9100b7013afb14676850ac2228e062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63161a4663891ab27e5aa8d015b94d09 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b8598250954723658826ad805f4ca71 = $(`<div id="html_7b8598250954723658826ad805f4ca71" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240526_170048.jpg<br>         <b>MD5:</b> 6f55abdb7061896006c5a752646db4f2<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240526_170048.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_63161a4663891ab27e5aa8d015b94d09.setContent(html_7b8598250954723658826ad805f4ca71);
+            
+        
+
+        marker_305fe79f8a5b3c58d6d76bac4b78f6c8.bindPopup(popup_63161a4663891ab27e5aa8d015b94d09)
+        ;
+
+        
+    
+    
+                marker_305fe79f8a5b3c58d6d76bac4b78f6c8.setIcon(icon_1b9100b7013afb14676850ac2228e062);
+            
+    
+            var marker_e240e26c33265751a0bc80e66c125a38 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9f328ea88c332195d2b3b7339b430069 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a544b8496855e16d05ccecd86249476 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34e9aa21851517ec78418faa799e03d6 = $(`<div id="html_34e9aa21851517ec78418faa799e03d6" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240526_170101.jpg<br>         <b>MD5:</b> f015d72e5cc36334873f9c4b48bde63e<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240526_170101.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_3a544b8496855e16d05ccecd86249476.setContent(html_34e9aa21851517ec78418faa799e03d6);
+            
+        
+
+        marker_e240e26c33265751a0bc80e66c125a38.bindPopup(popup_3a544b8496855e16d05ccecd86249476)
+        ;
+
+        
+    
+    
+                marker_e240e26c33265751a0bc80e66c125a38.setIcon(icon_9f328ea88c332195d2b3b7339b430069);
+            
+    
+            var marker_ff3c05bbe139c28a53bc02d2046b491c = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_944748190682ffaf4ab6f9b1f54e0b94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ad7b9deefbce1a18637ac90ab035c01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6209544934243947577c224040bb3294 = $(`<div id="html_6209544934243947577c224040bb3294" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240527_193005.jpg<br>         <b>MD5:</b> a50d256506cad4ba62a57adca40a3c70<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240527_193005.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_7ad7b9deefbce1a18637ac90ab035c01.setContent(html_6209544934243947577c224040bb3294);
+            
+        
+
+        marker_ff3c05bbe139c28a53bc02d2046b491c.bindPopup(popup_7ad7b9deefbce1a18637ac90ab035c01)
+        ;
+
+        
+    
+    
+                marker_ff3c05bbe139c28a53bc02d2046b491c.setIcon(icon_944748190682ffaf4ab6f9b1f54e0b94);
+            
+    
+            var marker_c30a506412e48289e24312f07bba7741 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_5485d743aa1ae64532e14bf0a46c86be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a51d7b62ff67d438b66a2e8468130933 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0db91e920ecb6971240fe528c4583c67 = $(`<div id="html_0db91e920ecb6971240fe528c4583c67" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240528_173438.jpg<br>         <b>MD5:</b> 9dc587bff55e1bc098bcef03cb98757a<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240528_173438.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_a51d7b62ff67d438b66a2e8468130933.setContent(html_0db91e920ecb6971240fe528c4583c67);
+            
+        
+
+        marker_c30a506412e48289e24312f07bba7741.bindPopup(popup_a51d7b62ff67d438b66a2e8468130933)
+        ;
+
+        
+    
+    
+                marker_c30a506412e48289e24312f07bba7741.setIcon(icon_5485d743aa1ae64532e14bf0a46c86be);
+            
+    
+            var marker_2786bb5a1e605c8745dd69436e35a220 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_7801ae403ae50a2e3aa32d1d1211ada3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21f4086a76cb474096fb1d368cd48311 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f7a495af0cf7cfc62bee2a4a9076a8af = $(`<div id="html_f7a495af0cf7cfc62bee2a4a9076a8af" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240605_111516.jpg<br>         <b>MD5:</b> 6c301474642b01f2b6399ee32474c004<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240605_111516.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_21f4086a76cb474096fb1d368cd48311.setContent(html_f7a495af0cf7cfc62bee2a4a9076a8af);
+            
+        
+
+        marker_2786bb5a1e605c8745dd69436e35a220.bindPopup(popup_21f4086a76cb474096fb1d368cd48311)
+        ;
+
+        
+    
+    
+                marker_2786bb5a1e605c8745dd69436e35a220.setIcon(icon_7801ae403ae50a2e3aa32d1d1211ada3);
+            
+    
+            var marker_446ee1d96987bed9b5770a4d7a853903 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_4e017c9b5d523670ab9428c0fdc0bb16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad504c2db4df09e187533876d3288086 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f4f40393ad375440c35ed6511bbff6f = $(`<div id="html_4f4f40393ad375440c35ed6511bbff6f" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240606_135322.jpg<br>         <b>MD5:</b> 0d3c72bd3898266287dda9104ae3ad00<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240606_135322.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_ad504c2db4df09e187533876d3288086.setContent(html_4f4f40393ad375440c35ed6511bbff6f);
+            
+        
+
+        marker_446ee1d96987bed9b5770a4d7a853903.bindPopup(popup_ad504c2db4df09e187533876d3288086)
+        ;
+
+        
+    
+    
+                marker_446ee1d96987bed9b5770a4d7a853903.setIcon(icon_4e017c9b5d523670ab9428c0fdc0bb16);
+            
+    
+            var marker_faad3772ac07e200c2770bb04e750772 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_31bc15f7e7ee8866b4b2c5614999731d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2979de13dfb3e59cfb4046165b49d0d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_143e1b27521e1e10712356b83df6b059 = $(`<div id="html_143e1b27521e1e10712356b83df6b059" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240617_083736.jpg<br>         <b>MD5:</b> 1405e470cbafdef9874b822e02a427d0<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240617_083736.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_e2979de13dfb3e59cfb4046165b49d0d.setContent(html_143e1b27521e1e10712356b83df6b059);
+            
+        
+
+        marker_faad3772ac07e200c2770bb04e750772.bindPopup(popup_e2979de13dfb3e59cfb4046165b49d0d)
+        ;
+
+        
+    
+    
+                marker_faad3772ac07e200c2770bb04e750772.setIcon(icon_31bc15f7e7ee8866b4b2c5614999731d);
+            
+    
+            var marker_b61eb2f65e1d5552600cb91cf71b23b7 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_bed116c444fbea14af5385a830714117 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74cccab27a4b19f5ea315556a314cb53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2648f2fc509f23f4e01d2c04201019d6 = $(`<div id="html_2648f2fc509f23f4e01d2c04201019d6" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240617_150002.jpg<br>         <b>MD5:</b> d5be680c4df9ae69570acb257292c261<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240617_150002.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_74cccab27a4b19f5ea315556a314cb53.setContent(html_2648f2fc509f23f4e01d2c04201019d6);
+            
+        
+
+        marker_b61eb2f65e1d5552600cb91cf71b23b7.bindPopup(popup_74cccab27a4b19f5ea315556a314cb53)
+        ;
+
+        
+    
+    
+                marker_b61eb2f65e1d5552600cb91cf71b23b7.setIcon(icon_bed116c444fbea14af5385a830714117);
+            
+    
+            var marker_9a9a5d73249930d3363bd91726353cd4 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_261cb7ad7e9cce19b246f73368bc8276 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d3ef2e081f25e02741f7c2bc0de8b43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fcdc7486862208091e5ae07bbf1db6b1 = $(`<div id="html_fcdc7486862208091e5ae07bbf1db6b1" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240620_101154.jpg<br>         <b>MD5:</b> af5fbdd95dc510630e9e83c5afce9997<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240620_101154.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_2d3ef2e081f25e02741f7c2bc0de8b43.setContent(html_fcdc7486862208091e5ae07bbf1db6b1);
+            
+        
+
+        marker_9a9a5d73249930d3363bd91726353cd4.bindPopup(popup_2d3ef2e081f25e02741f7c2bc0de8b43)
+        ;
+
+        
+    
+    
+                marker_9a9a5d73249930d3363bd91726353cd4.setIcon(icon_261cb7ad7e9cce19b246f73368bc8276);
+            
+    
+            var marker_43eca6acab6be9d59d768f3639b2a491 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_b0e84d3dc8f746121396a313bbb82e1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b23124cd4b7afda63f019dff088e5c9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_534892b975a4c887764a6628990cf499 = $(`<div id="html_534892b975a4c887764a6628990cf499" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240709_113628.jpg<br>         <b>MD5:</b> 7ab3ffd608d1f8600f5a6fc363f73493<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240709_113628.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_b23124cd4b7afda63f019dff088e5c9a.setContent(html_534892b975a4c887764a6628990cf499);
+            
+        
+
+        marker_43eca6acab6be9d59d768f3639b2a491.bindPopup(popup_b23124cd4b7afda63f019dff088e5c9a)
+        ;
+
+        
+    
+    
+                marker_43eca6acab6be9d59d768f3639b2a491.setIcon(icon_b0e84d3dc8f746121396a313bbb82e1c);
+            
+    
+            var marker_d47b5b74e2085323481cad9ae070715f = L.marker(
+                [39.7236, 19.6999],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2e0d85a0ebe5faf94ba09ed4f9bd5c99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04ef817beb69e28478645de6094a234a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99ec6e9cdb39489f30654dc755e6a99d = $(`<div id="html_99ec6e9cdb39489f30654dc755e6a99d" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240719_222244.jpg<br>         <b>MD5:</b> c597aa45357a2c88240ed0d65139fb6c<br>         <b>Location:</b> Agios Georgis, Greece<br>     <img src="static/thumb_20240719_222244.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_04ef817beb69e28478645de6094a234a.setContent(html_99ec6e9cdb39489f30654dc755e6a99d);
+            
+        
+
+        marker_d47b5b74e2085323481cad9ae070715f.bindPopup(popup_04ef817beb69e28478645de6094a234a)
+        ;
+
+        
+    
+    
+                marker_d47b5b74e2085323481cad9ae070715f.setIcon(icon_2e0d85a0ebe5faf94ba09ed4f9bd5c99);
+            
+    
+            var marker_9a67b09f509ad0828fc4f337ed0a56ca = L.marker(
+                [39.7236, 19.6999],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c487380f24cc3f1b13e0d7dd547c2467 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01a8d076fb0b61b77ebe713b7cb344c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db3dd9d89054f75992a20035e1e5d17b = $(`<div id="html_db3dd9d89054f75992a20035e1e5d17b" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240719_222440.jpg<br>         <b>MD5:</b> 78171c286e86ab2052c08db0ee91765c<br>         <b>Location:</b> Agios Georgis, Greece<br>     <img src="static/thumb_20240719_222440.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_01a8d076fb0b61b77ebe713b7cb344c3.setContent(html_db3dd9d89054f75992a20035e1e5d17b);
+            
+        
+
+        marker_9a67b09f509ad0828fc4f337ed0a56ca.bindPopup(popup_01a8d076fb0b61b77ebe713b7cb344c3)
+        ;
+
+        
+    
+    
+                marker_9a67b09f509ad0828fc4f337ed0a56ca.setIcon(icon_c487380f24cc3f1b13e0d7dd547c2467);
+            
+    
+            var marker_a06a045fbe66ce909c40e6d0384e33a7 = L.marker(
+                [39.7236, 19.6999],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1fca71996a0f8e2c7860032c3be0651c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9c0d9f8cf1adfa1a54e09918cadcf32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18d02d643001bad052b47764430cc0b9 = $(`<div id="html_18d02d643001bad052b47764430cc0b9" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240719_222506.jpg<br>         <b>MD5:</b> a67dac019b58ac723c9eec6870691e22<br>         <b>Location:</b> Agios Georgis, Greece<br>     <img src="static/thumb_20240719_222506.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d9c0d9f8cf1adfa1a54e09918cadcf32.setContent(html_18d02d643001bad052b47764430cc0b9);
+            
+        
+
+        marker_a06a045fbe66ce909c40e6d0384e33a7.bindPopup(popup_d9c0d9f8cf1adfa1a54e09918cadcf32)
+        ;
+
+        
+    
+    
+                marker_a06a045fbe66ce909c40e6d0384e33a7.setIcon(icon_1fca71996a0f8e2c7860032c3be0651c);
+            
+    
+            var marker_2cf01b8fcb4875011cc61521177535c6 = L.marker(
+                [39.7236, 19.6999],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_4e1238f4921dd75f93a89e68438e4dd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1d266e131ed53a78d7f7c1c2da7afa0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18594790e949a59a7305486f8716ec42 = $(`<div id="html_18594790e949a59a7305486f8716ec42" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240719_223542.jpg<br>         <b>MD5:</b> cfd1bfa1f450a00bf1196aef70d946b3<br>         <b>Location:</b> Agios Georgis, Greece<br>     <img src="static/thumb_20240719_223542.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_b1d266e131ed53a78d7f7c1c2da7afa0.setContent(html_18594790e949a59a7305486f8716ec42);
+            
+        
+
+        marker_2cf01b8fcb4875011cc61521177535c6.bindPopup(popup_b1d266e131ed53a78d7f7c1c2da7afa0)
+        ;
+
+        
+    
+    
+                marker_2cf01b8fcb4875011cc61521177535c6.setIcon(icon_4e1238f4921dd75f93a89e68438e4dd9);
+            
+    
+            var marker_b55fb44ca246c2c6ee70bfa917fab4e6 = L.marker(
+                [39.7236, 19.6999],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_6afb16fc75f509dc0996ec4c031b2088 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a27a6a115bc84fcea00783dee0797233 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b811cd2859a7507d8602e6c411deb2dd = $(`<div id="html_b811cd2859a7507d8602e6c411deb2dd" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240725_122836.jpg<br>         <b>MD5:</b> b0c0275823d52eb6c9d0a594af564df1<br>         <b>Location:</b> Agios Georgis, Greece<br>     <img src="static/thumb_20240725_122836.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_a27a6a115bc84fcea00783dee0797233.setContent(html_b811cd2859a7507d8602e6c411deb2dd);
+            
+        
+
+        marker_b55fb44ca246c2c6ee70bfa917fab4e6.bindPopup(popup_a27a6a115bc84fcea00783dee0797233)
+        ;
+
+        
+    
+    
+                marker_b55fb44ca246c2c6ee70bfa917fab4e6.setIcon(icon_6afb16fc75f509dc0996ec4c031b2088);
+            
+    
+            var marker_4cac28257199ffd2e4194aad6e2ca947 = L.marker(
+                [45.9, 27.0834],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_621eb6d949ce9903880e6708722bddea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3afa53066b6a1f8c529b782a07e47136 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6cb40e0eff3e1762b9a2d1f8f833d55 = $(`<div id="html_e6cb40e0eff3e1762b9a2d1f8f833d55" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240727_122409 (2).jpg<br>         <b>MD5:</b> 7175598e295d2d1d3871275249ee9e72<br>         <b>Location:</b> Panciu, Romania<br>     <img src="static/thumb_20240727_122409 (2).jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_3afa53066b6a1f8c529b782a07e47136.setContent(html_e6cb40e0eff3e1762b9a2d1f8f833d55);
+            
+        
+
+        marker_4cac28257199ffd2e4194aad6e2ca947.bindPopup(popup_3afa53066b6a1f8c529b782a07e47136)
+        ;
+
+        
+    
+    
+                marker_4cac28257199ffd2e4194aad6e2ca947.setIcon(icon_621eb6d949ce9903880e6708722bddea);
+            
+    
+            var marker_b558d7607f8526c93a3521ba3946f68a = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_bfe7841a7185ada903ec5d1645c483e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_298b52b6fcd20256c7fe81048f0a1081 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2707079d8c457c5ba63522969dce4caa = $(`<div id="html_2707079d8c457c5ba63522969dce4caa" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240729_204235.jpg<br>         <b>MD5:</b> 42f712507c6039177f62ee8b40f69673<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240729_204235.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_298b52b6fcd20256c7fe81048f0a1081.setContent(html_2707079d8c457c5ba63522969dce4caa);
+            
+        
+
+        marker_b558d7607f8526c93a3521ba3946f68a.bindPopup(popup_298b52b6fcd20256c7fe81048f0a1081)
+        ;
+
+        
+    
+    
+                marker_b558d7607f8526c93a3521ba3946f68a.setIcon(icon_bfe7841a7185ada903ec5d1645c483e6);
+            
+    
+            var marker_2284c799e3b6d07c4ad0c3d84db8e4e1 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_3b51969cbbb277d31845e0c307a52c69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f162d7b1f2862477ecbe4b06c2f1e77 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60614fac7675dadead47f3882aa32d86 = $(`<div id="html_60614fac7675dadead47f3882aa32d86" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240803_002043.jpg<br>         <b>MD5:</b> ee5a5e2e3c0e495636e1f71dcbad9794<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240803_002043.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_5f162d7b1f2862477ecbe4b06c2f1e77.setContent(html_60614fac7675dadead47f3882aa32d86);
+            
+        
+
+        marker_2284c799e3b6d07c4ad0c3d84db8e4e1.bindPopup(popup_5f162d7b1f2862477ecbe4b06c2f1e77)
+        ;
+
+        
+    
+    
+                marker_2284c799e3b6d07c4ad0c3d84db8e4e1.setIcon(icon_3b51969cbbb277d31845e0c307a52c69);
+            
+    
+            var marker_b1caaeb6c5312dcae35edd2c3a2886a0 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2135902893554280a0cc5b6874a837ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e426949bfe16bc7795722ee6b5b15d6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f7b30334d821f5bab21aa147f67c4ce6 = $(`<div id="html_f7b30334d821f5bab21aa147f67c4ce6" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240805_112045.jpg<br>         <b>MD5:</b> b15a038fae1d84ac8d94b46fc847b00d<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240805_112045.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_0e426949bfe16bc7795722ee6b5b15d6.setContent(html_f7b30334d821f5bab21aa147f67c4ce6);
+            
+        
+
+        marker_b1caaeb6c5312dcae35edd2c3a2886a0.bindPopup(popup_0e426949bfe16bc7795722ee6b5b15d6)
+        ;
+
+        
+    
+    
+                marker_b1caaeb6c5312dcae35edd2c3a2886a0.setIcon(icon_2135902893554280a0cc5b6874a837ea);
+            
+    
+            var marker_78725c7c43adfcfb3a18f46a6259f2ba = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2f72a50c1c9ccaf4c93ff4da85950b59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_506e9f15d95fc2d7f0d55cc0ca3785ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_551b79482abb9fb5afb9e1736d6dbd69 = $(`<div id="html_551b79482abb9fb5afb9e1736d6dbd69" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240808_054532.jpg<br>         <b>MD5:</b> dfd40516cdf265d0d648c885f88e2ac7<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240808_054532.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_506e9f15d95fc2d7f0d55cc0ca3785ca.setContent(html_551b79482abb9fb5afb9e1736d6dbd69);
+            
+        
+
+        marker_78725c7c43adfcfb3a18f46a6259f2ba.bindPopup(popup_506e9f15d95fc2d7f0d55cc0ca3785ca)
+        ;
+
+        
+    
+    
+                marker_78725c7c43adfcfb3a18f46a6259f2ba.setIcon(icon_2f72a50c1c9ccaf4c93ff4da85950b59);
+            
+    
+            var marker_88ec2925222655dbb13b659e721af89f = L.marker(
+                [43.8866, 25.9628],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_0d88ba6129b935c3b123f9f975d153bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa263dc4d07d16dc469dad31a399f449 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57929133b67e1e1cb5faba80f34d02a1 = $(`<div id="html_57929133b67e1e1cb5faba80f34d02a1" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240810_071347.jpg<br>         <b>MD5:</b> 2e5398bbffadafe54b202941d1cb02ee<br>         <b>Location:</b> Giurgiu, Romania<br>     <img src="static/thumb_20240810_071347.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_aa263dc4d07d16dc469dad31a399f449.setContent(html_57929133b67e1e1cb5faba80f34d02a1);
+            
+        
+
+        marker_88ec2925222655dbb13b659e721af89f.bindPopup(popup_aa263dc4d07d16dc469dad31a399f449)
+        ;
+
+        
+    
+    
+                marker_88ec2925222655dbb13b659e721af89f.setIcon(icon_0d88ba6129b935c3b123f9f975d153bf);
+            
+    
+            var marker_e4a164849a792498de8ac33c241b714e = L.marker(
+                [43.8866, 25.9628],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_ea2b9435b310a78bd7714026627c7fd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b025ba5965a49c54d6fcc0961e970fcf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_80f5901b9d50069ae804d7bf4e035670 = $(`<div id="html_80f5901b9d50069ae804d7bf4e035670" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240810_105042.jpg<br>         <b>MD5:</b> 16aafb75bcb02263b044988e8df88296<br>         <b>Location:</b> Giurgiu, Romania<br>     <img src="static/thumb_20240810_105042.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_b025ba5965a49c54d6fcc0961e970fcf.setContent(html_80f5901b9d50069ae804d7bf4e035670);
+            
+        
+
+        marker_e4a164849a792498de8ac33c241b714e.bindPopup(popup_b025ba5965a49c54d6fcc0961e970fcf)
+        ;
+
+        
+    
+    
+                marker_e4a164849a792498de8ac33c241b714e.setIcon(icon_ea2b9435b310a78bd7714026627c7fd7);
+            
+    
+            var marker_37eafeb29944273e8181a2329f40885e = L.marker(
+                [43.8866, 25.9628],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_f386b51d0fa456b9512532b9bea19329 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_541ab1ac5169208399cd34b58f949b83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fe3f12ae0724f558ee969f478302f4c = $(`<div id="html_9fe3f12ae0724f558ee969f478302f4c" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240810_152135.jpg<br>         <b>MD5:</b> 6ec36e1e28915ba19378f852f2336b98<br>         <b>Location:</b> Giurgiu, Romania<br>     <img src="static/thumb_20240810_152135.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_541ab1ac5169208399cd34b58f949b83.setContent(html_9fe3f12ae0724f558ee969f478302f4c);
+            
+        
+
+        marker_37eafeb29944273e8181a2329f40885e.bindPopup(popup_541ab1ac5169208399cd34b58f949b83)
+        ;
+
+        
+    
+    
+                marker_37eafeb29944273e8181a2329f40885e.setIcon(icon_f386b51d0fa456b9512532b9bea19329);
+            
+    
+            var marker_1ca448f38c43003765d7cfa7ddef57bc = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2f4009be3b5c3558edd579031d908647 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_782862ce20bb719fcc47fb0ff96f931d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_35e9f2cbec8e32025da2f3d06f6d5166 = $(`<div id="html_35e9f2cbec8e32025da2f3d06f6d5166" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240812_125522.jpg<br>         <b>MD5:</b> 0a56b9ed31b7f9b48d94533072bf9f01<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240812_125522.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_782862ce20bb719fcc47fb0ff96f931d.setContent(html_35e9f2cbec8e32025da2f3d06f6d5166);
+            
+        
+
+        marker_1ca448f38c43003765d7cfa7ddef57bc.bindPopup(popup_782862ce20bb719fcc47fb0ff96f931d)
+        ;
+
+        
+    
+    
+                marker_1ca448f38c43003765d7cfa7ddef57bc.setIcon(icon_2f4009be3b5c3558edd579031d908647);
+            
+    
+            var marker_5cf43ad33a076a8b0656fbc97e936b43 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1f90eb7d5f5eeac50e0aaf83f6191371 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a60e520891f0f3b749f384f09bef094 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21e895222e396c8f5b66f04a5d9f61b9 = $(`<div id="html_21e895222e396c8f5b66f04a5d9f61b9" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240819_142350.jpg<br>         <b>MD5:</b> 1be56964c3acc240a555f9b64d1b1253<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240819_142350.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_2a60e520891f0f3b749f384f09bef094.setContent(html_21e895222e396c8f5b66f04a5d9f61b9);
+            
+        
+
+        marker_5cf43ad33a076a8b0656fbc97e936b43.bindPopup(popup_2a60e520891f0f3b749f384f09bef094)
+        ;
+
+        
+    
+    
+                marker_5cf43ad33a076a8b0656fbc97e936b43.setIcon(icon_1f90eb7d5f5eeac50e0aaf83f6191371);
+            
+    
+            var marker_9c98d207851ee0e6e6cc5d4e74e9e059 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9bd235568b9c50e9e5c661eb0743a905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e739c052f5d2157cc170ca6c0e9c84c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_456361d3c2fccd008bcf36ff9750d26a = $(`<div id="html_456361d3c2fccd008bcf36ff9750d26a" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240822_132413.jpg<br>         <b>MD5:</b> 632e12b0e9df831013e7902a7aece6a8<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240822_132413.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_6e739c052f5d2157cc170ca6c0e9c84c.setContent(html_456361d3c2fccd008bcf36ff9750d26a);
+            
+        
+
+        marker_9c98d207851ee0e6e6cc5d4e74e9e059.bindPopup(popup_6e739c052f5d2157cc170ca6c0e9c84c)
+        ;
+
+        
+    
+    
+                marker_9c98d207851ee0e6e6cc5d4e74e9e059.setIcon(icon_9bd235568b9c50e9e5c661eb0743a905);
+            
+    
+            var marker_129448afd9259d52e2143a0ea2c4dadf = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_2ffd6b53d4f108f9a71b253015f2fb1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ddb01d47610d41301d79a27ac65d067 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5624f1df45a34c8aba9ac1dda65d732 = $(`<div id="html_d5624f1df45a34c8aba9ac1dda65d732" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240902_125031.jpg<br>         <b>MD5:</b> cb05f18dd3fd2f64fa4873e59e6bd4e4<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240902_125031.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_6ddb01d47610d41301d79a27ac65d067.setContent(html_d5624f1df45a34c8aba9ac1dda65d732);
+            
+        
+
+        marker_129448afd9259d52e2143a0ea2c4dadf.bindPopup(popup_6ddb01d47610d41301d79a27ac65d067)
+        ;
+
+        
+    
+    
+                marker_129448afd9259d52e2143a0ea2c4dadf.setIcon(icon_2ffd6b53d4f108f9a71b253015f2fb1b);
+            
+    
+            var marker_8c0506cd45dd9f84b71b5071313242f9 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_d3898f3f6967a579c46371c5c63add06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c82af043ba01b90a6d9956feaf21b618 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f099eda078c5b48901048ce40f5fcc8f = $(`<div id="html_f099eda078c5b48901048ce40f5fcc8f" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240902_125115.jpg<br>         <b>MD5:</b> 446a631ebe218b52a3a0a411a9b33774<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240902_125115.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_c82af043ba01b90a6d9956feaf21b618.setContent(html_f099eda078c5b48901048ce40f5fcc8f);
+            
+        
+
+        marker_8c0506cd45dd9f84b71b5071313242f9.bindPopup(popup_c82af043ba01b90a6d9956feaf21b618)
+        ;
+
+        
+    
+    
+                marker_8c0506cd45dd9f84b71b5071313242f9.setIcon(icon_d3898f3f6967a579c46371c5c63add06);
+            
+    
+            var marker_7b425bbe513571e5efc3ff3f8ac78d32 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_15bd04c72b55079bb64cc6c439d68387 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0abb1e3aa221a6847d1aa09facea30b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7f176b065adc841be8d36b051422727 = $(`<div id="html_a7f176b065adc841be8d36b051422727" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240909_152711.jpg<br>         <b>MD5:</b> 38a632804a08f714e83ab10521b94ed6<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20240909_152711.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_b0abb1e3aa221a6847d1aa09facea30b.setContent(html_a7f176b065adc841be8d36b051422727);
+            
+        
+
+        marker_7b425bbe513571e5efc3ff3f8ac78d32.bindPopup(popup_b0abb1e3aa221a6847d1aa09facea30b)
+        ;
+
+        
+    
+    
+                marker_7b425bbe513571e5efc3ff3f8ac78d32.setIcon(icon_15bd04c72b55079bb64cc6c439d68387);
+            
+    
+            var marker_1e414bce96350459fd39a86f4aeaa283 = L.marker(
+                [44.403, 26.2199],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1fb19b648d73632b85a7539f7b33cc5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b90eaa83e618300ddef9ae34d8b7c05d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afe9c24d52320efc9c358bd7b9d085e3 = $(`<div id="html_afe9c24d52320efc9c358bd7b9d085e3" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240913_183011.jpg<br>         <b>MD5:</b> 61e16db94024ee3c14a2d03aeee223d8<br>         <b>Location:</b> CÄƒÈ›elu, Romania<br>     <img src="static/thumb_20240913_183011.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_b90eaa83e618300ddef9ae34d8b7c05d.setContent(html_afe9c24d52320efc9c358bd7b9d085e3);
+            
+        
+
+        marker_1e414bce96350459fd39a86f4aeaa283.bindPopup(popup_b90eaa83e618300ddef9ae34d8b7c05d)
+        ;
+
+        
+    
+    
+                marker_1e414bce96350459fd39a86f4aeaa283.setIcon(icon_1fb19b648d73632b85a7539f7b33cc5f);
+            
+    
+            var marker_a72a276e603a60a62856ae2e6cbec35a = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_44d206fac9261e89e15561217025eee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab6a43617fb92229a4c53058ba775130 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1705001af5934f42aa4d509da9dab2cb = $(`<div id="html_1705001af5934f42aa4d509da9dab2cb" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240917_102931.jpg<br>         <b>MD5:</b> b76b0cb83689b62de75882f41a4c3706<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20240917_102931.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_ab6a43617fb92229a4c53058ba775130.setContent(html_1705001af5934f42aa4d509da9dab2cb);
+            
+        
+
+        marker_a72a276e603a60a62856ae2e6cbec35a.bindPopup(popup_ab6a43617fb92229a4c53058ba775130)
+        ;
+
+        
+    
+    
+                marker_a72a276e603a60a62856ae2e6cbec35a.setIcon(icon_44d206fac9261e89e15561217025eee8);
+            
+    
+            var marker_9d2ba7f4fbaeeb700c9c68c68d2b68b4 = L.marker(
+                [44.0001, 26.1166],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_d4da54a8e9625d041da9b6203a51d335 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ad038e60dd14251513d47d4a2dcb599 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20ad667a6475e10def812389624eebbc = $(`<div id="html_20ad667a6475e10def812389624eebbc" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240922_174639.jpg<br>         <b>MD5:</b> 108174819ad84acd9d750bf32f296df7<br>         <b>Location:</b> Gostinu, Romania<br>     <img src="static/thumb_20240922_174639.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_8ad038e60dd14251513d47d4a2dcb599.setContent(html_20ad667a6475e10def812389624eebbc);
+            
+        
+
+        marker_9d2ba7f4fbaeeb700c9c68c68d2b68b4.bindPopup(popup_8ad038e60dd14251513d47d4a2dcb599)
+        ;
+
+        
+    
+    
+                marker_9d2ba7f4fbaeeb700c9c68c68d2b68b4.setIcon(icon_d4da54a8e9625d041da9b6203a51d335);
+            
+    
+            var marker_8b1e34b13f4a4ee19b697cb1e7e1e2c4 = L.marker(
+                [44.0001, 26.1166],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_cba6f90e74cf0ca77839f4bea43374f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d19ca6e3c885945138c464cd3515be30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6aba0ece4e2f3ac5895622751d4dd5c9 = $(`<div id="html_6aba0ece4e2f3ac5895622751d4dd5c9" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20240922_174644.jpg<br>         <b>MD5:</b> 64acb934ee62147f23156ff2eaceb8c8<br>         <b>Location:</b> Gostinu, Romania<br>     <img src="static/thumb_20240922_174644.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_d19ca6e3c885945138c464cd3515be30.setContent(html_6aba0ece4e2f3ac5895622751d4dd5c9);
+            
+        
+
+        marker_8b1e34b13f4a4ee19b697cb1e7e1e2c4.bindPopup(popup_d19ca6e3c885945138c464cd3515be30)
+        ;
+
+        
+    
+    
+                marker_8b1e34b13f4a4ee19b697cb1e7e1e2c4.setIcon(icon_cba6f90e74cf0ca77839f4bea43374f9);
+            
+    
+            var marker_2382055f226e7d7d0d57bbd782c8714a = L.marker(
+                [44.5501, 26.0668],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_5d2ea18beb1d7038c6a79b08f12ebb84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53bf9e048e3921a5462b1455ada372cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1874d8d2067bbf617c2497728502d364 = $(`<div id="html_1874d8d2067bbf617c2497728502d364" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241005_152005.jpg<br>         <b>MD5:</b> 0de496b926b4cfd65b6be92c1f1db6f5<br>         <b>Location:</b> Otopeni, Romania<br>     <img src="static/thumb_20241005_152005.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_53bf9e048e3921a5462b1455ada372cb.setContent(html_1874d8d2067bbf617c2497728502d364);
+            
+        
+
+        marker_2382055f226e7d7d0d57bbd782c8714a.bindPopup(popup_53bf9e048e3921a5462b1455ada372cb)
+        ;
+
+        
+    
+    
+                marker_2382055f226e7d7d0d57bbd782c8714a.setIcon(icon_5d2ea18beb1d7038c6a79b08f12ebb84);
+            
+    
+            var marker_f479b0a638f9461393b037494d18bdc7 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_dc4e6c5a3428a0682ac65c22fa5cd05a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52a8ee69e00c9f59a39c4553a73f786b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2fe0a2e0b08b673ace9c3a4b5d9663bc = $(`<div id="html_2fe0a2e0b08b673ace9c3a4b5d9663bc" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241010_101653.jpg<br>         <b>MD5:</b> cefd4b7da2978e9b90971837570ea854<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241010_101653.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_52a8ee69e00c9f59a39c4553a73f786b.setContent(html_2fe0a2e0b08b673ace9c3a4b5d9663bc);
+            
+        
+
+        marker_f479b0a638f9461393b037494d18bdc7.bindPopup(popup_52a8ee69e00c9f59a39c4553a73f786b)
+        ;
+
+        
+    
+    
+                marker_f479b0a638f9461393b037494d18bdc7.setIcon(icon_dc4e6c5a3428a0682ac65c22fa5cd05a);
+            
+    
+            var marker_dc17cb496c203bfdbf8e013f18f8aec7 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_07cef2f58cc8b71a8d0bf4a5ba881c64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef6f71dcc8d60b3db00c8b387ae1d20c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_696a120860ae7b28d18c4ad5b759111f = $(`<div id="html_696a120860ae7b28d18c4ad5b759111f" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241015_131134.jpg<br>         <b>MD5:</b> 5d87e8e0b20242890a298874c1813b48<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241015_131134.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_ef6f71dcc8d60b3db00c8b387ae1d20c.setContent(html_696a120860ae7b28d18c4ad5b759111f);
+            
+        
+
+        marker_dc17cb496c203bfdbf8e013f18f8aec7.bindPopup(popup_ef6f71dcc8d60b3db00c8b387ae1d20c)
+        ;
+
+        
+    
+    
+                marker_dc17cb496c203bfdbf8e013f18f8aec7.setIcon(icon_07cef2f58cc8b71a8d0bf4a5ba881c64);
+            
+    
+            var marker_3f8c646fb5dc360e649dbc226b95c8e2 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_60a07dad57c6bc5a7ed01f9906bdaaae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec813213b62903a129ca7ba9e2c8d116 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb951c91e7d141b519a79f57a7070b9b = $(`<div id="html_bb951c91e7d141b519a79f57a7070b9b" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241027_175943.jpg<br>         <b>MD5:</b> a6eab83db14293e0ed4265986b80dce2<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241027_175943.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_ec813213b62903a129ca7ba9e2c8d116.setContent(html_bb951c91e7d141b519a79f57a7070b9b);
+            
+        
+
+        marker_3f8c646fb5dc360e649dbc226b95c8e2.bindPopup(popup_ec813213b62903a129ca7ba9e2c8d116)
+        ;
+
+        
+    
+    
+                marker_3f8c646fb5dc360e649dbc226b95c8e2.setIcon(icon_60a07dad57c6bc5a7ed01f9906bdaaae);
+            
+    
+            var marker_d1df8dc6bd2e9d3ce620b67e91a46f9c = L.marker(
+                [55.6303, 12.6003],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c369fac9672042634ece6c497e1b0d4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfff35ccf328cb99d2075f5edcb24230 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f730aa31570db047551dbc1c51a0ff5 = $(`<div id="html_4f730aa31570db047551dbc1c51a0ff5" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241028_141750.jpg<br>         <b>MD5:</b> 9aeeb26f4b8a21c1d9c913cf8b8f23b8<br>         <b>Location:</b> TÃ¥rnby, Denmark<br>     <img src="static/thumb_20241028_141750.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_cfff35ccf328cb99d2075f5edcb24230.setContent(html_4f730aa31570db047551dbc1c51a0ff5);
+            
+        
+
+        marker_d1df8dc6bd2e9d3ce620b67e91a46f9c.bindPopup(popup_cfff35ccf328cb99d2075f5edcb24230)
+        ;
+
+        
+    
+    
+                marker_d1df8dc6bd2e9d3ce620b67e91a46f9c.setIcon(icon_c369fac9672042634ece6c497e1b0d4c);
+            
+    
+            var marker_07e08d4244b12f0049e3d069131b1269 = L.marker(
+                [55.6303, 12.6003],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_876fcb69453ecf0f27d7ce35178db1c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_549033434733dd886202929a651b71a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_679767fe5cef3f027ce21809d25b30a1 = $(`<div id="html_679767fe5cef3f027ce21809d25b30a1" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241028_142653.jpg<br>         <b>MD5:</b> ecfc79af1720f68fb1aed459593566d5<br>         <b>Location:</b> TÃ¥rnby, Denmark<br>     <img src="static/thumb_20241028_142653.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_549033434733dd886202929a651b71a5.setContent(html_679767fe5cef3f027ce21809d25b30a1);
+            
+        
+
+        marker_07e08d4244b12f0049e3d069131b1269.bindPopup(popup_549033434733dd886202929a651b71a5)
+        ;
+
+        
+    
+    
+                marker_07e08d4244b12f0049e3d069131b1269.setIcon(icon_876fcb69453ecf0f27d7ce35178db1c7);
+            
+    
+            var marker_229fcf187c32b4f46d54b368fc84998a = L.marker(
+                [55.7335, 9.108],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c57188a10ddabded5956c1ad38bde045 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2d2c863b6c7b4ec329682c19e5d180c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f586f044096b5f141acbbe853610b10 = $(`<div id="html_4f586f044096b5f141acbbe853610b10" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241101_113428.jpg<br>         <b>MD5:</b> 8779ec8408fe7fd2d28ae6b1b2c28096<br>         <b>Location:</b> Billund, Denmark<br>     <img src="static/thumb_20241101_113428.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_a2d2c863b6c7b4ec329682c19e5d180c.setContent(html_4f586f044096b5f141acbbe853610b10);
+            
+        
+
+        marker_229fcf187c32b4f46d54b368fc84998a.bindPopup(popup_a2d2c863b6c7b4ec329682c19e5d180c)
+        ;
+
+        
+    
+    
+                marker_229fcf187c32b4f46d54b368fc84998a.setIcon(icon_c57188a10ddabded5956c1ad38bde045);
+            
+    
+            var marker_2176e813533b804d347b377385dc2717 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_e33b678581c99613c6596d4558a62298 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bce7f145b91737b3312fbcdae1d76ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81de33ae636a6aff8f417421b4de5e10 = $(`<div id="html_81de33ae636a6aff8f417421b4de5e10" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241107_085457.jpg<br>         <b>MD5:</b> e346fe2029755b44b17cf0469b791b92<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241107_085457.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_0bce7f145b91737b3312fbcdae1d76ed.setContent(html_81de33ae636a6aff8f417421b4de5e10);
+            
+        
+
+        marker_2176e813533b804d347b377385dc2717.bindPopup(popup_0bce7f145b91737b3312fbcdae1d76ed)
+        ;
+
+        
+    
+    
+                marker_2176e813533b804d347b377385dc2717.setIcon(icon_e33b678581c99613c6596d4558a62298);
+            
+    
+            var marker_80438843fed4cbdc218698d459126b47 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_aa942dfed8f8c8196168cf6d324829da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfc5bb68d731aa2abe4733cc6fa02818 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30ac341789db05037955a753bf9feaac = $(`<div id="html_30ac341789db05037955a753bf9feaac" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241108_092739.jpg<br>         <b>MD5:</b> b1e4741fdbc0c07c9e5183dec182dd7a<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241108_092739.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_cfc5bb68d731aa2abe4733cc6fa02818.setContent(html_30ac341789db05037955a753bf9feaac);
+            
+        
+
+        marker_80438843fed4cbdc218698d459126b47.bindPopup(popup_cfc5bb68d731aa2abe4733cc6fa02818)
+        ;
+
+        
+    
+    
+                marker_80438843fed4cbdc218698d459126b47.setIcon(icon_aa942dfed8f8c8196168cf6d324829da);
+            
+    
+            var marker_a54ed0af62246a34461600aa9d641f9e = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_06f0c43525af5e219ab0a06189c888be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ebcb10ba427fef1eb263f25a4f9b07b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8577988d32b9082e70f30dbbd1f0528c = $(`<div id="html_8577988d32b9082e70f30dbbd1f0528c" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241108_102553.jpg<br>         <b>MD5:</b> 615765f444ae79143ff189d806acce3e<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241108_102553.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_1ebcb10ba427fef1eb263f25a4f9b07b.setContent(html_8577988d32b9082e70f30dbbd1f0528c);
+            
+        
+
+        marker_a54ed0af62246a34461600aa9d641f9e.bindPopup(popup_1ebcb10ba427fef1eb263f25a4f9b07b)
+        ;
+
+        
+    
+    
+                marker_a54ed0af62246a34461600aa9d641f9e.setIcon(icon_06f0c43525af5e219ab0a06189c888be);
+            
+    
+            var marker_b20a4e114a5257e1b5669a0c6993d3e3 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_29f48986122d1af6e759bb5e1cd8ebbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2aa35858f6eedc97e4008f01bf28f262 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdd63a61a7ecbcb9c7cab4fb27b124a8 = $(`<div id="html_fdd63a61a7ecbcb9c7cab4fb27b124a8" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241111_171418.jpg<br>         <b>MD5:</b> c52478856b37e7166d0cce20f5083690<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241111_171418.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_2aa35858f6eedc97e4008f01bf28f262.setContent(html_fdd63a61a7ecbcb9c7cab4fb27b124a8);
+            
+        
+
+        marker_b20a4e114a5257e1b5669a0c6993d3e3.bindPopup(popup_2aa35858f6eedc97e4008f01bf28f262)
+        ;
+
+        
+    
+    
+                marker_b20a4e114a5257e1b5669a0c6993d3e3.setIcon(icon_29f48986122d1af6e759bb5e1cd8ebbd);
+            
+    
+            var marker_a58ca3271d35627f54bacf7301d98b88 = L.marker(
+                [44.4924, 26.0482],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9477e1da33a677faa6acdb193fd2f90f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa4ba1e40e0d51589a3a03c3bc263670 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7bb71cdb62fbe5fe896cef2fc6c48a29 = $(`<div id="html_7bb71cdb62fbe5fe896cef2fc6c48a29" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241113_092016.jpg<br>         <b>MD5:</b> b7f5010c2275de9d6058c54b0a6177a4<br>         <b>Location:</b> Sector 1, Romania<br>     <img src="static/thumb_20241113_092016.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_fa4ba1e40e0d51589a3a03c3bc263670.setContent(html_7bb71cdb62fbe5fe896cef2fc6c48a29);
+            
+        
+
+        marker_a58ca3271d35627f54bacf7301d98b88.bindPopup(popup_fa4ba1e40e0d51589a3a03c3bc263670)
+        ;
+
+        
+    
+    
+                marker_a58ca3271d35627f54bacf7301d98b88.setIcon(icon_9477e1da33a677faa6acdb193fd2f90f);
+            
+    
+            var marker_8d69fa894a81ea5f6517844c4231228c = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_21eb968a5151f2728847cbea6792cd9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cef6af5adf0a61de407425f0b16379e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f449c4bb73a8eceef6e2a1b98d1b5767 = $(`<div id="html_f449c4bb73a8eceef6e2a1b98d1b5767" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241118_101949.jpg<br>         <b>MD5:</b> 7330979cd336918936ba3c4baa0e51d6<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241118_101949.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_7cef6af5adf0a61de407425f0b16379e.setContent(html_f449c4bb73a8eceef6e2a1b98d1b5767);
+            
+        
+
+        marker_8d69fa894a81ea5f6517844c4231228c.bindPopup(popup_7cef6af5adf0a61de407425f0b16379e)
+        ;
+
+        
+    
+    
+                marker_8d69fa894a81ea5f6517844c4231228c.setIcon(icon_21eb968a5151f2728847cbea6792cd9a);
+            
+    
+            var marker_7ea91871e1308fa4c43df79e46016259 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_10e3c3c0cc7c187bc5e5c2ec8c7a1e4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f99fd62da676e6a5d80ccf793c05cef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69aadc1f718b29dad39053f3a9b723fe = $(`<div id="html_69aadc1f718b29dad39053f3a9b723fe" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241118_101951.jpg<br>         <b>MD5:</b> e00a566a2aaeb60db55b095a80e070f1<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241118_101951.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_9f99fd62da676e6a5d80ccf793c05cef.setContent(html_69aadc1f718b29dad39053f3a9b723fe);
+            
+        
+
+        marker_7ea91871e1308fa4c43df79e46016259.bindPopup(popup_9f99fd62da676e6a5d80ccf793c05cef)
+        ;
+
+        
+    
+    
+                marker_7ea91871e1308fa4c43df79e46016259.setIcon(icon_10e3c3c0cc7c187bc5e5c2ec8c7a1e4e);
+            
+    
+            var marker_1f4e29277a5e0ba9e0d454fa40b9fe54 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_111fa13511e2a6dc3da5801d4d698a6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faac4026a1dcc5abadb4f1e24a9c6520 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_065e1b2f950d9e9c1afd243b677d1c8a = $(`<div id="html_065e1b2f950d9e9c1afd243b677d1c8a" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241121_091729.jpg<br>         <b>MD5:</b> 68072363f5348aeab18dc84aacf92191<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241121_091729.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_faac4026a1dcc5abadb4f1e24a9c6520.setContent(html_065e1b2f950d9e9c1afd243b677d1c8a);
+            
+        
+
+        marker_1f4e29277a5e0ba9e0d454fa40b9fe54.bindPopup(popup_faac4026a1dcc5abadb4f1e24a9c6520)
+        ;
+
+        
+    
+    
+                marker_1f4e29277a5e0ba9e0d454fa40b9fe54.setIcon(icon_111fa13511e2a6dc3da5801d4d698a6a);
+            
+    
+            var marker_db2c2700a8d16ef183c8f1e09de55019 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_95a414f3b8239d0e24ed6c8770a640e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c96d62a1822e1f9f0c24ccee7f7d38e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b538eb2611be6d04fb475362ff78935 = $(`<div id="html_1b538eb2611be6d04fb475362ff78935" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241124_132122.jpg<br>         <b>MD5:</b> d8b81c2d95430ee8eaf8d7c549554f37<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241124_132122.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_7c96d62a1822e1f9f0c24ccee7f7d38e.setContent(html_1b538eb2611be6d04fb475362ff78935);
+            
+        
+
+        marker_db2c2700a8d16ef183c8f1e09de55019.bindPopup(popup_7c96d62a1822e1f9f0c24ccee7f7d38e)
+        ;
+
+        
+    
+    
+                marker_db2c2700a8d16ef183c8f1e09de55019.setIcon(icon_95a414f3b8239d0e24ed6c8770a640e0);
+            
+    
+            var marker_a544c216e349ce027d9529fa325f1ebd = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c86dde4c259fb8aa01da5bfb502ac746 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7a1eff1db2eb2c2d7d9d1a9aef66f6c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_754cb3f36315eb5a7249eb0484d9bbc8 = $(`<div id="html_754cb3f36315eb5a7249eb0484d9bbc8" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241124_132214.jpg<br>         <b>MD5:</b> d2433a3935092d566c99da1e5e6fb136<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241124_132214.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_f7a1eff1db2eb2c2d7d9d1a9aef66f6c.setContent(html_754cb3f36315eb5a7249eb0484d9bbc8);
+            
+        
+
+        marker_a544c216e349ce027d9529fa325f1ebd.bindPopup(popup_f7a1eff1db2eb2c2d7d9d1a9aef66f6c)
+        ;
+
+        
+    
+    
+                marker_a544c216e349ce027d9529fa325f1ebd.setIcon(icon_c86dde4c259fb8aa01da5bfb502ac746);
+            
+    
+            var marker_c7bff8f6edc1cf99151adcc088a7e40c = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_eb7d5346a83749afcf2df0fe37106e9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98a1c708d5617be08c834f69d0e03b53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_021d4b68ec92cf885ba3d795fdb43c9b = $(`<div id="html_021d4b68ec92cf885ba3d795fdb43c9b" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241126_101726.jpg<br>         <b>MD5:</b> 2b6df2feaf852c1706998037b0fbbee3<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241126_101726.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_98a1c708d5617be08c834f69d0e03b53.setContent(html_021d4b68ec92cf885ba3d795fdb43c9b);
+            
+        
+
+        marker_c7bff8f6edc1cf99151adcc088a7e40c.bindPopup(popup_98a1c708d5617be08c834f69d0e03b53)
+        ;
+
+        
+    
+    
+                marker_c7bff8f6edc1cf99151adcc088a7e40c.setIcon(icon_eb7d5346a83749afcf2df0fe37106e9c);
+            
+    
+            var marker_9fca06703006394a808f66061e2831db = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_74ca027e1c3cfa9d68f5ce2c36a0fc32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77f7b08d0663070430bf63f9f54b61c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb0615ad9957d3999f568f826fb76d56 = $(`<div id="html_bb0615ad9957d3999f568f826fb76d56" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241128_075609.jpg<br>         <b>MD5:</b> 1bcf54b1f7093c3655f1ef61cbe0138c<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241128_075609.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_77f7b08d0663070430bf63f9f54b61c5.setContent(html_bb0615ad9957d3999f568f826fb76d56);
+            
+        
+
+        marker_9fca06703006394a808f66061e2831db.bindPopup(popup_77f7b08d0663070430bf63f9f54b61c5)
+        ;
+
+        
+    
+    
+                marker_9fca06703006394a808f66061e2831db.setIcon(icon_74ca027e1c3cfa9d68f5ce2c36a0fc32);
+            
+    
+            var marker_d029ff30e586a802ce73f332a4bde4a3 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_4c11cf21a0cb5097b84088d9f799907a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_439f854cf8f6cba09f67c68daa95b5a9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a466004d5c68a9da3c3dba921fa71985 = $(`<div id="html_a466004d5c68a9da3c3dba921fa71985" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241213_141522.jpg<br>         <b>MD5:</b> 11584ce7c49c92b977eb9d1d383de0bd<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241213_141522.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_439f854cf8f6cba09f67c68daa95b5a9.setContent(html_a466004d5c68a9da3c3dba921fa71985);
+            
+        
+
+        marker_d029ff30e586a802ce73f332a4bde4a3.bindPopup(popup_439f854cf8f6cba09f67c68daa95b5a9)
+        ;
+
+        
+    
+    
+                marker_d029ff30e586a802ce73f332a4bde4a3.setIcon(icon_4c11cf21a0cb5097b84088d9f799907a);
+            
+    
+            var marker_cc23c3f8b65ff7effda1c57731406e5b = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c95693b13264d5c203f96c8050db8c12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f28ab756965a6a434ee14e29a49f009 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e342c2e73d04112de357ad04145e8de4 = $(`<div id="html_e342c2e73d04112de357ad04145e8de4" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241223_110920.jpg<br>         <b>MD5:</b> c4b6791c3905ffa1568bb344ed26cbf6<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20241223_110920.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_5f28ab756965a6a434ee14e29a49f009.setContent(html_e342c2e73d04112de357ad04145e8de4);
+            
+        
+
+        marker_cc23c3f8b65ff7effda1c57731406e5b.bindPopup(popup_5f28ab756965a6a434ee14e29a49f009)
+        ;
+
+        
+    
+    
+                marker_cc23c3f8b65ff7effda1c57731406e5b.setIcon(icon_c95693b13264d5c203f96c8050db8c12);
+            
+    
+            var marker_e6a7d572990315287fc42971f872bd98 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_e84596b082efdadbe62b04a3bd57de87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c818a486f8195a32610a8e407db3c040 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3eae3ca4cb9f299bdb7f11efcc6964cd = $(`<div id="html_3eae3ca4cb9f299bdb7f11efcc6964cd" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241224_181028.jpg<br>         <b>MD5:</b> 4fffbf45b65b0b0b0fa5599d92fd26e3<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241224_181028.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_c818a486f8195a32610a8e407db3c040.setContent(html_3eae3ca4cb9f299bdb7f11efcc6964cd);
+            
+        
+
+        marker_e6a7d572990315287fc42971f872bd98.bindPopup(popup_c818a486f8195a32610a8e407db3c040)
+        ;
+
+        
+    
+    
+                marker_e6a7d572990315287fc42971f872bd98.setIcon(icon_e84596b082efdadbe62b04a3bd57de87);
+            
+    
+            var marker_e11b6abdc7f69652e46e50a3c1d83bb3 = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c2c8d96291b97970dd2701df01c57eec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0438a748a563cf615ab40925562aa1db = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_303df6a324cbc9c6caf016ade8e6a7b6 = $(`<div id="html_303df6a324cbc9c6caf016ade8e6a7b6" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241225_133812.jpg<br>         <b>MD5:</b> 56d373da5438aadd5c0e04b3bca2b728<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20241225_133812.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_0438a748a563cf615ab40925562aa1db.setContent(html_303df6a324cbc9c6caf016ade8e6a7b6);
+            
+        
+
+        marker_e11b6abdc7f69652e46e50a3c1d83bb3.bindPopup(popup_0438a748a563cf615ab40925562aa1db)
+        ;
+
+        
+    
+    
+                marker_e11b6abdc7f69652e46e50a3c1d83bb3.setIcon(icon_c2c8d96291b97970dd2701df01c57eec);
+            
+    
+            var marker_c1911c05cb5649f88cfd439bea6c9b7c = L.marker(
+                [45.9999, 26.6666],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_468cb09c96eceaf548e9cbde0b1e576a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4411d035800ebb8372385925342564f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33b97d5012bbfb4846c77e8bdc19e402 = $(`<div id="html_33b97d5012bbfb4846c77e8bdc19e402" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20241227_144335.jpg<br>         <b>MD5:</b> 5ed392c4cea7104b533674586670a747<br>         <b>Location:</b> Dragosloveni, Romania<br>     <img src="static/thumb_20241227_144335.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_4411d035800ebb8372385925342564f0.setContent(html_33b97d5012bbfb4846c77e8bdc19e402);
+            
+        
+
+        marker_c1911c05cb5649f88cfd439bea6c9b7c.bindPopup(popup_4411d035800ebb8372385925342564f0)
+        ;
+
+        
+    
+    
+                marker_c1911c05cb5649f88cfd439bea6c9b7c.setIcon(icon_468cb09c96eceaf548e9cbde0b1e576a);
+            
+    
+            var marker_866c2aae77d0e0ef76806fb0981b8f8c = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_cf7eddf7c8d4116d01788abf57269d10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4daefc3ca86f818aeac544fd232937e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4fc89bb9f42aca70dd0d13001d84efcd = $(`<div id="html_4fc89bb9f42aca70dd0d13001d84efcd" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250113_121344.jpg<br>         <b>MD5:</b> 4337caea349bf758e03696cf8eeeb100<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250113_121344.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_4daefc3ca86f818aeac544fd232937e0.setContent(html_4fc89bb9f42aca70dd0d13001d84efcd);
+            
+        
+
+        marker_866c2aae77d0e0ef76806fb0981b8f8c.bindPopup(popup_4daefc3ca86f818aeac544fd232937e0)
+        ;
+
+        
+    
+    
+                marker_866c2aae77d0e0ef76806fb0981b8f8c.setIcon(icon_cf7eddf7c8d4116d01788abf57269d10);
+            
+    
+            var marker_b545cd1543229aed4950378431c4d8b4 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_c5d714521d669527ef84bbabd5ca2630 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bda5466db83308b2254c064c85b534fa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31ddf3042ce80c243f0a65358538fa32 = $(`<div id="html_31ddf3042ce80c243f0a65358538fa32" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250116_085310.jpg<br>         <b>MD5:</b> cfedb649a51c0bb48729faa6c45749ab<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250116_085310.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_bda5466db83308b2254c064c85b534fa.setContent(html_31ddf3042ce80c243f0a65358538fa32);
+            
+        
+
+        marker_b545cd1543229aed4950378431c4d8b4.bindPopup(popup_bda5466db83308b2254c064c85b534fa)
+        ;
+
+        
+    
+    
+                marker_b545cd1543229aed4950378431c4d8b4.setIcon(icon_c5d714521d669527ef84bbabd5ca2630);
+            
+    
+            var marker_f94398dc1fae6049dcc3630d5eb113e2 = L.marker(
+                [45.9999, 26.6666],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9746da4044bdca5eb8c0d832a4fd53b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1a94c48d718cb88f9f9aeca2fe6e552 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ecf2ad8c85bf2660a22480e16995d73 = $(`<div id="html_9ecf2ad8c85bf2660a22480e16995d73" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250221_145314.jpg<br>         <b>MD5:</b> ae6e7cd23b697c907422eeeefd557216<br>         <b>Location:</b> Dragosloveni, Romania<br>     <img src="static/thumb_20250221_145314.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_a1a94c48d718cb88f9f9aeca2fe6e552.setContent(html_9ecf2ad8c85bf2660a22480e16995d73);
+            
+        
+
+        marker_f94398dc1fae6049dcc3630d5eb113e2.bindPopup(popup_a1a94c48d718cb88f9f9aeca2fe6e552)
+        ;
+
+        
+    
+    
+                marker_f94398dc1fae6049dcc3630d5eb113e2.setIcon(icon_9746da4044bdca5eb8c0d832a4fd53b6);
+            
+    
+            var marker_cb7222dfac6622f8c671ec302a3bff89 = L.marker(
+                [45.9999, 26.6666],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_12a2b67c0bb265bfbc69f24b15c8fc95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_819940e8dc11cc07e79abd61281f4f59 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_123350f302fb64a8bc97be927bc9e493 = $(`<div id="html_123350f302fb64a8bc97be927bc9e493" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250221_145326.jpg<br>         <b>MD5:</b> 765eff1aa27eeed91227cf1871145a29<br>         <b>Location:</b> Dragosloveni, Romania<br>     <img src="static/thumb_20250221_145326.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_819940e8dc11cc07e79abd61281f4f59.setContent(html_123350f302fb64a8bc97be927bc9e493);
+            
+        
+
+        marker_cb7222dfac6622f8c671ec302a3bff89.bindPopup(popup_819940e8dc11cc07e79abd61281f4f59)
+        ;
+
+        
+    
+    
+                marker_cb7222dfac6622f8c671ec302a3bff89.setIcon(icon_12a2b67c0bb265bfbc69f24b15c8fc95);
+            
+    
+            var marker_52e048895f80662303da453ef70bfd0d = L.marker(
+                [45.9999, 26.6666],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_7505ea8c80154cb7e091894c6114c9e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ea6c119d994e4cb168603bb316c6598 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_75afa77916a132de65335d4963c41f04 = $(`<div id="html_75afa77916a132de65335d4963c41f04" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250221_150517.jpg<br>         <b>MD5:</b> 1c6895455b6d7b0eb7883f094e6b99a6<br>         <b>Location:</b> Dragosloveni, Romania<br>     <img src="static/thumb_20250221_150517.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_4ea6c119d994e4cb168603bb316c6598.setContent(html_75afa77916a132de65335d4963c41f04);
+            
+        
+
+        marker_52e048895f80662303da453ef70bfd0d.bindPopup(popup_4ea6c119d994e4cb168603bb316c6598)
+        ;
+
+        
+    
+    
+                marker_52e048895f80662303da453ef70bfd0d.setIcon(icon_7505ea8c80154cb7e091894c6114c9e1);
+            
+    
+            var marker_2bdf78ccac5ad02e3ded2f84df6872e6 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_20118c02d3315e795aefe78c7a1d7281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_759454e6339abb42e15848bcebe19f9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f9190d81ddb09759145c607885f2cc4 = $(`<div id="html_0f9190d81ddb09759145c607885f2cc4" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250225_074438.jpg<br>         <b>MD5:</b> 755df17ae3cab6114e5ca5b0a574d5d1<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250225_074438.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_759454e6339abb42e15848bcebe19f9b.setContent(html_0f9190d81ddb09759145c607885f2cc4);
+            
+        
+
+        marker_2bdf78ccac5ad02e3ded2f84df6872e6.bindPopup(popup_759454e6339abb42e15848bcebe19f9b)
+        ;
+
+        
+    
+    
+                marker_2bdf78ccac5ad02e3ded2f84df6872e6.setIcon(icon_20118c02d3315e795aefe78c7a1d7281);
+            
+    
+            var marker_89f296df4d730477067c08c3dc8c3aab = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_f698b6ed432ff177b0b2f4593198aae1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89a3c14aad2e6db82c63612ee5e1787f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79094650d5b0640ff3326ea2991feac8 = $(`<div id="html_79094650d5b0640ff3326ea2991feac8" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250225_074452.jpg<br>         <b>MD5:</b> c7cb9545d76b9d88efbc6e37881be904<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250225_074452.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_89a3c14aad2e6db82c63612ee5e1787f.setContent(html_79094650d5b0640ff3326ea2991feac8);
+            
+        
+
+        marker_89f296df4d730477067c08c3dc8c3aab.bindPopup(popup_89a3c14aad2e6db82c63612ee5e1787f)
+        ;
+
+        
+    
+    
+                marker_89f296df4d730477067c08c3dc8c3aab.setIcon(icon_f698b6ed432ff177b0b2f4593198aae1);
+            
+    
+            var marker_7ab30433a8b700d4972cb2a1f0da7562 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_9b2a6895e98a00fac4bcbee3747de215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06cfa10fa4223f99acfdb6cdc07b5093 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a05ea13523f103866e95a5000adbf7a3 = $(`<div id="html_a05ea13523f103866e95a5000adbf7a3" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250228_075140.jpg<br>         <b>MD5:</b> c5cfbb84092a9b16bf6f550c62b7cf1a<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250228_075140.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_06cfa10fa4223f99acfdb6cdc07b5093.setContent(html_a05ea13523f103866e95a5000adbf7a3);
+            
+        
+
+        marker_7ab30433a8b700d4972cb2a1f0da7562.bindPopup(popup_06cfa10fa4223f99acfdb6cdc07b5093)
+        ;
+
+        
+    
+    
+                marker_7ab30433a8b700d4972cb2a1f0da7562.setIcon(icon_9b2a6895e98a00fac4bcbee3747de215);
+            
+    
+            var marker_e0fc1a644c5f9bdf4b0d98cafe48141e = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_e89e77ca0350578b7bf0d60a315f9fbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cc36613f4408d4bdc0272c5a898d842 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_05819bae06c80aaa86e0ae48876b6aef = $(`<div id="html_05819bae06c80aaa86e0ae48876b6aef" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250306_135612.jpg<br>         <b>MD5:</b> db26016bb50288623e84771ac4c48f7e<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20250306_135612.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_8cc36613f4408d4bdc0272c5a898d842.setContent(html_05819bae06c80aaa86e0ae48876b6aef);
+            
+        
+
+        marker_e0fc1a644c5f9bdf4b0d98cafe48141e.bindPopup(popup_8cc36613f4408d4bdc0272c5a898d842)
+        ;
+
+        
+    
+    
+                marker_e0fc1a644c5f9bdf4b0d98cafe48141e.setIcon(icon_e89e77ca0350578b7bf0d60a315f9fbd);
+            
+    
+            var marker_1411bc8dd69115058123d22f8c063aa0 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_52307ced4bb0a68bd205679656788ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e30ed82316c0fd5492a193d70c933ce1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_47a6c3315c485cc2c6f8fb79842d5587 = $(`<div id="html_47a6c3315c485cc2c6f8fb79842d5587" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250311_170132.jpg<br>         <b>MD5:</b> 43cb903035dbfaead5290b52c328ff24<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250311_170132.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_e30ed82316c0fd5492a193d70c933ce1.setContent(html_47a6c3315c485cc2c6f8fb79842d5587);
+            
+        
+
+        marker_1411bc8dd69115058123d22f8c063aa0.bindPopup(popup_e30ed82316c0fd5492a193d70c933ce1)
+        ;
+
+        
+    
+    
+                marker_1411bc8dd69115058123d22f8c063aa0.setIcon(icon_52307ced4bb0a68bd205679656788ce9);
+            
+    
+            var marker_df312d0d02709ae0ff83cf14a427b451 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_1fd185c083f37d8194cfa5230669846c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_deaccecca096437915c0c2cf2394b061 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce206e0775f6516be4b80998655565c8 = $(`<div id="html_ce206e0775f6516be4b80998655565c8" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250320_131826.jpg<br>         <b>MD5:</b> cdec7f907b1b4c22c874ef8286fd86bb<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250320_131826.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_deaccecca096437915c0c2cf2394b061.setContent(html_ce206e0775f6516be4b80998655565c8);
+            
+        
+
+        marker_df312d0d02709ae0ff83cf14a427b451.bindPopup(popup_deaccecca096437915c0c2cf2394b061)
+        ;
+
+        
+    
+    
+                marker_df312d0d02709ae0ff83cf14a427b451.setIcon(icon_1fd185c083f37d8194cfa5230669846c);
+            
+    
+            var marker_4014971017cf5558779d05860d3a8113 = L.marker(
+                [44.4323, 26.1063],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_3b653a8bf86571dff95e61d88aa1fa46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4df48b1db21bb15396e9713f885b9662 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e0973628ee574ce7f616a1371008eec = $(`<div id="html_0e0973628ee574ce7f616a1371008eec" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250320_140322.jpg<br>         <b>MD5:</b> 5ceb81c2e26924658c54827bc6565e92<br>         <b>Location:</b> Bucharest, Romania<br>     <img src="static/thumb_20250320_140322.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_4df48b1db21bb15396e9713f885b9662.setContent(html_0e0973628ee574ce7f616a1371008eec);
+            
+        
+
+        marker_4014971017cf5558779d05860d3a8113.bindPopup(popup_4df48b1db21bb15396e9713f885b9662)
+        ;
+
+        
+    
+    
+                marker_4014971017cf5558779d05860d3a8113.setIcon(icon_3b653a8bf86571dff95e61d88aa1fa46);
+            
+    
+            var marker_5df8a39b55f70adf3be4ded392d3527f = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_0b2dbbed9eb86dd3bedc84fd32d16038 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41ea1a6f92f23cdcf0d6b25d69394e44 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c124f1b33f071bc1cd81a25ac89e0762 = $(`<div id="html_c124f1b33f071bc1cd81a25ac89e0762" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250323_183836.jpg<br>         <b>MD5:</b> ba268e5cc7357c3e6570f06ea551cc02<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20250323_183836.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_41ea1a6f92f23cdcf0d6b25d69394e44.setContent(html_c124f1b33f071bc1cd81a25ac89e0762);
+            
+        
+
+        marker_5df8a39b55f70adf3be4ded392d3527f.bindPopup(popup_41ea1a6f92f23cdcf0d6b25d69394e44)
+        ;
+
+        
+    
+    
+                marker_5df8a39b55f70adf3be4ded392d3527f.setIcon(icon_0b2dbbed9eb86dd3bedc84fd32d16038);
+            
+    
+            var marker_2bdcd6d7a701c9140d03aa4ccb03633b = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_b29e5a6e2b0172528b9216bec11c4594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f835c4a564e5a0f1ff5439922d4e771 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_740dc1a81b5c615a777b1c918527f9b6 = $(`<div id="html_740dc1a81b5c615a777b1c918527f9b6" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250323_183841.jpg<br>         <b>MD5:</b> 49fa0b09f7d66e4cfa7be7b2ed1f1a21<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20250323_183841.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_5f835c4a564e5a0f1ff5439922d4e771.setContent(html_740dc1a81b5c615a777b1c918527f9b6);
+            
+        
+
+        marker_2bdcd6d7a701c9140d03aa4ccb03633b.bindPopup(popup_5f835c4a564e5a0f1ff5439922d4e771)
+        ;
+
+        
+    
+    
+                marker_2bdcd6d7a701c9140d03aa4ccb03633b.setIcon(icon_b29e5a6e2b0172528b9216bec11c4594);
+            
+    
+            var marker_ffa2428d11ce4d67b97191ffead231cc = L.marker(
+                [44.4234, 26.1687],
+                {
+}
+            ).addTo(marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d);
+        
+    
+            var icon_d43f2548b7ce54ac4e627a9b1b361552 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c7cc53cfcc131fd6be394a6eb2edeeb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0755bd118efb7f131d3de8f29b2652c3 = $(`<div id="html_0755bd118efb7f131d3de8f29b2652c3" style="width: 100.0%; height: 100.0%;">         <b>Filename:</b> 20250323_183848.jpg<br>         <b>MD5:</b> 1f345bd4208f1776259faf6b04dae951<br>         <b>Location:</b> Sector 3, Romania<br>     <img src="static/thumb_20250323_183848.jpg" alt="Thumbnail" style="width:100px;height:100px;"><br></div>`)[0];
+                popup_1c7cc53cfcc131fd6be394a6eb2edeeb.setContent(html_0755bd118efb7f131d3de8f29b2652c3);
+            
+        
+
+        marker_ffa2428d11ce4d67b97191ffead231cc.bindPopup(popup_1c7cc53cfcc131fd6be394a6eb2edeeb)
+        ;
+
+        
+    
+    
+                marker_ffa2428d11ce4d67b97191ffead231cc.setIcon(icon_d43f2548b7ce54ac4e627a9b1b361552);
+            
+    
+            marker_cluster_9d4fb042f40e2fc2a8fcbcdd858d773d.addTo(map_7641e8144073ce43f3cb1eefdc9401f7);
+        
+    
+            var poly_line_14d3546c6cf422c49a335149a1098cdf = L.polyline(
+                [[44.4234, 26.1687], [44.4234, 26.1687], [44.6167, 26.1166], [45.9, 27.0834], [45.9999, 26.8832], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [44.4323, 26.1063], [44.403, 26.2199], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [39.7236, 19.6999], [39.7236, 19.6999], [39.7236, 19.6999], [39.7236, 19.6999], [39.7236, 19.6999], [45.9, 27.0834], [44.4234, 26.1687], [44.4234, 26.1687], [44.4323, 26.1063], [44.4234, 26.1687], [43.8866, 25.9628], [43.8866, 25.9628], [43.8866, 25.9628], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.403, 26.2199], [44.4234, 26.1687], [44.0001, 26.1166], [44.0001, 26.1166], [44.5501, 26.0668], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [55.6303, 12.6003], [55.6303, 12.6003], [55.7335, 9.108], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4924, 26.0482], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [44.4234, 26.1687], [45.9999, 26.6666], [44.4323, 26.1063], [44.4323, 26.1063], [45.9999, 26.6666], [45.9999, 26.6666], [45.9999, 26.6666], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [44.4323, 26.1063], [44.4323, 26.1063], [44.4323, 26.1063], [44.4234, 26.1687], [44.4234, 26.1687], [44.4234, 26.1687]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_7641e8144073ce43f3cb1eefdc9401f7);
+        
+</script>
+</html>
